@@ -1,0 +1,36 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer mode="side" opened class="sidenav">
+    <mat-toolbar color="primary">
+      <span class="color">X-Trades</span>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/crypto-list']" routerLinkActive="active">
+        <mat-icon>euro_symbol</mat-icon>
+        <span matLine>Crypto Currency</span>
+      </a>
+      <a mat-list-item [routerLink]="['/task-overview']" routerLinkActive="active">
+        <mat-icon>comment</mat-icon>
+        <span matLine>Task Overview</span>
+      </a>
+
+
+
+
+      
+    </mat-nav-list> 
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon class="color">menu</mat-icon>
+      </button>
+      <span class="color"></span>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

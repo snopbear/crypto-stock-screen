@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>Filter Crypto Currencies</h2>
+  <form (ngSubmit)="applyFilters()">
+    <div>
+      <label for="minVolume">Min Trade Volume (USDT)</label>
+      <input type="number" id="minVolume" [(ngModel)]="filters.minVolume" name="minVolume">
+    </div>
+    <div>
+      <label for="maxVolume">Max Trade Volume (USDT)</label>
+      <input type="number" id="maxVolume" [(ngModel)]="filters.maxVolume" name="maxVolume">
+    </div>
+    <div>
+      <label for="minPriceChange">Min Price Change (%)</label>
+      <input type="number" id="minPriceChange" [(ngModel)]="filters.minPriceChange" name="minPriceChange">
+    </div>
+    <div>
+      <label for="maxPriceChange">Max Price Change (%)</label>
+      <input type="number" id="maxPriceChange" [(ngModel)]="filters.maxPriceChange" name="maxPriceChange">
+    </div>
+    <div>
+      <label for="minPrice">Min Price</label>
+      <input type="number" id="minPrice" [(ngModel)]="filters.minPrice" name="minPrice">
+    </div>
+    <div>
+      <label for="maxPrice">Max Price</label>
+      <input type="number" id="maxPrice" [(ngModel)]="filters.maxPrice" name="maxPrice">
+    </div>
+    <button type="submit">Apply Filters</button>
+
+    
+  </form>
+</div>

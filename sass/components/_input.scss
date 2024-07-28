@@ -1,0 +1,14 @@
+    input[type="number"] {
+      width: 100%;
+      padding: var(--padding);
+      font-size: var(--font-size);
+      border: 1px solid var(--input-border-color);
+      border-radius: var(--border-radius);
+      background-color: var(--input-bg-color);
+      transition: border-color var(--transition-duration);
+    }
+
+    input[type="number"]:focus {
+      border-color: var(--input-focus-border-color);
+      outline: none;
+    }

@@ -1,0 +1,59 @@
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 80vh; /* Make the layout take up the full height of the viewport */
+  font-size: var(--font-size-secondary) !important;
+
+  & .panel {
+    flex: 1; /* Each panel takes up an equal amount of space */
+    padding: 1.3rem;
+    box-sizing: border-box; /* Include padding in total width */
+    border: 1px solid var(--secondary-color);
+  }
+
+  & .left {
+    padding: var(--padding);
+     overflow-y: scroll;
+  scrollbar-color: var(--tertiary-color) var(--secondary-color-m);
+scrollbar-width: thin;
+  }
+  & .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.hover-row:hover {
+  background-color: var(--tertiary-color-m);
+  color: var(--tertiary-color-l);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+
+    & .panel {
+      padding: 0.5rem;
+    }
+
+    & .left {
+    }
+
+    & .right {
+      height: 60%;
+      padding: 8rem;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+
+/*Start  Table styles.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th {
+  border: 0.1rem solid #ddd;
+  padding: var(--padding);
+   position: sticky;
+   top: -12px;
+   background: var(--tertiary-color-m);
+}
+td {
+  border: 0.1rem solid #ddd;
+  padding: 0.7rem;
+}
+
+th {
+  text-align: left;
+}
+
+.odd-row {
+  background-color: #f2f2f2; /* Light gray */
+}
+
+.even-row {
+  background-color: #ffffff; /* White */
+}
+
+
+/*Start  Table styles.css */
+
+
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    text-align: right;
+  }
+  tr {
+    margin-bottom: 1rem;
+  }
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+}

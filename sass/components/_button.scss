@@ -1,0 +1,29 @@
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font-size: var(--font-size);
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--primary-color-m);
+  padding: var(--button-padding);
+  text-decoration: none;
+  margin: var(--button-margin);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+}
+
+/******************************************************/
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  padding: var(--button-padding);
+  border: none;
+  border-radius: var(--button-border-radius);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-hover-bg-color);
+}

@@ -1,0 +1,35 @@
+.sidenav-container {
+  height: 100%;
+  & .sidenav {
+    width: 20rem;
+    background-color: var(--primary-color-m);
+    border-radius: 0;
+    & .mat-icon {
+      font-size: 1rem;
+    }
+    & span {
+      font-size: var(--font-size);
+    }
+  }
+  & .color {
+    color: var(--primary-color-m);
+  }
+}
+
+.mat-sidenav-content {
+  & .content {
+    padding: 1.6rem;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--primary-color);
+}
+
+.mat-mdc-nav-list .mat-mdc-list-item {
+  border-radius: 0;
+}
+

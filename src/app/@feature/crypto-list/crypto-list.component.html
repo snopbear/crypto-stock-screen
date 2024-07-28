@@ -1,0 +1,36 @@
+<input class="margin-bottom" type="button" value="Open Filter Dialog" (click)="openFilterDialog()">
+<div class="container">
+  <div class="panel left">
+    <h2>Crypto Currency List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Price Change (%)</th>
+          <th>Volume (USDT)</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (crypto of filteredCryptos; track crypto.symbol;let idx = $index) {
+        <tr (click)="onCryptoClick(crypto)" class="hover-row"  [ngClass]="{'odd-row': idx % 2 !== 0, 'even-row': idx % 2 === 0}" >
+          <td>{{crypto.symbol}}</td>
+          <td>{{crypto.lastPrice}}</td>
+          <td>{{crypto.priceChangePercent}}</td>
+          <td>{{crypto.quoteVolume}}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <div class="panel right">
+    @if (selectedCrypto) {
+    <app-crypto-chart [symbol]="selectedCrypto.symbol" [data]="selectedCryptoData" [labels]="selectedCryptoLabels">
+    </app-crypto-chart>
+    }
+    @else{
+    <p>No crypto selected.</p>
+    }
+
+  </div>
+</div>

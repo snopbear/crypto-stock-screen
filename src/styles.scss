@@ -1,0 +1,66 @@
+@import "./../sass/components/button";
+@import "./../sass/components/input";
+@import "./../sass/components/table";
+@import "./../sass/vendor/material";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+   --background-color: #f0f0f0;
+  --container-background-color: #fff;
+  --container-padding: 5rem;
+  --container-border-radius: 0.8rem;
+  --container-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  --heading-color: #ff6347;
+  --heading-font-size: 9.6rem;
+  --paragraph-color: #333;
+  --paragraph-font-size: 2.4rem;
+
+  --primary-color: #3f51b5;
+  --primary-color-m: #fff;
+  --secondary-color: #f0f0f0;
+  --secondary-color-m: #e0e0e0;
+  --tertiary-color: #3498db;
+  --tertiary-color-m: #ccc;
+  --tertiary-color-l: #000;
+
+  --error-color: #e74c3c;
+  --border-radius: 0.5rem;
+  --padding: 1rem;
+  --margin: 1rem;
+  --font-size: 1.8rem;
+  --font-size-secondary: 1.6rem;
+  --transition-duration: 0.3s;
+  --label-color: #2c3e50;
+  --input-bg-color: #ecf0f1;
+  --input-border-color: #bdc3c7;
+  --input-focus-border-color: var(--tertiary-color);
+  --button-bg-color: var(--tertiary-color);
+  --button-text-color: var(--primary-color-m);
+  --button-hover-bg-color: var(--tertiary-color); /* darken(--primary-color, 10%); */
+  --button-padding: 1.2rem 2rem;
+  --button-margin: 1rem 0.5rem;
+  --button-border-radius: var(--border-radius);
+}
+
+body {
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  background-color: var(--secondary-color);
+  line-height: 1.8;
+}
+
+.container {
+  text-align: center;
+  background-color: var(--container-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  box-shadow: var(--container-box-shadow);
+}

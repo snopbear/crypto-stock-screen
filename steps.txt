@@ -1,0 +1,4 @@
+npm install @swimlane/ngx-charts d3 --f
+
+
+ng build --output-path docs --base-href /crypto-stock-screener/

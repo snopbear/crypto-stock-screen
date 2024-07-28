@@ -1,0 +1,30 @@
+
+
+
+h1 {
+  font-size: var(--heading-font-size);
+  margin: 0;
+  color: var(--heading-color);
+}
+
+p {
+  font-size: var(--paragraph-font-size);
+  margin: 20px 0;
+  color: var(--paragraph-color);
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: var(--button-padding);
+  font-size: var(--font-size-secondary);
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  text-decoration: none;
+  border-radius: var(--button-border-radius);
+  transition: background-color var(--transition-duration);
+}
+
+.home-button:hover {
+  background-color: var(--button-hover-bg-color);
+}
