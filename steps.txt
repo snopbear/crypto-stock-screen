@@ -1,4 +1,5 @@
 npm install @swimlane/ngx-charts d3 --f
 
 
-ng b --base-href /crypto-stock-screen/
+
+  ng build  --base-href https://snopbear.github.io/crypto-stock-screen/
