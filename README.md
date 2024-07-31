@@ -1,5 +1,7 @@
 # Xtrades & CryptoTraders.
 
+# https://snopbear.github.io/crypto-stock-screen
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 
 # Task Description
